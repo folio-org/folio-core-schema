@@ -1,0 +1,55 @@
+openapi: 3.0.0
+info:
+  title: Folio common fake API
+  version: v1
+servers:
+  - url: http://localhost/
+paths:
+  /dummy:
+    get:
+      parameters:
+        # Types
+        - name: timePeriod
+          in: query
+          schema:
+            $ref: schemas/core/timePeriod.json
+        - name: uuid
+          in: query
+          schema:
+            $ref: schemas/core/uuid.json
+
+        # Errors
+        - name: error
+          in: query
+          schema:
+            $ref: schemas/core/error.json
+        - name: errors
+          in: query
+          schema:
+            $ref: schemas/core/errors.json
+
+        - name: parameter
+          in: query
+          schema:
+            $ref: schemas/core/parameter.json
+        - name: parameters
+          in: query
+          schema:
+            $ref: schemas/core/parameters.json
+
+        # Legacy
+        - name: metadata
+          in: query
+          schema:
+            $ref: schemas/core/metadata.json
+        - name: tags
+          in: query
+          schema:
+            $ref: schemas/core/tags.json
+      responses:
+        200:
+          description: dummy
+          content:
+            text/plain:
+              schema:
+                type: string
