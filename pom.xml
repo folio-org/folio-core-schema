@@ -22,7 +22,7 @@
 
     <core.yaml.file>${project.basedir}/src/main/resources/swagger.api/core.yaml</core.yaml.file>
 
-    <jackson-databind-nullable.version>0.2.1</jackson-databind-nullable.version>
+    <jackson-databind-nullable.version>0.2.3</jackson-databind-nullable.version>
     <swagger.annotations.version>1.6.3</swagger.annotations.version>
   </properties>
 
@@ -30,7 +30,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>5.3.13</version>
+      <version>5.3.22</version>
       <scope>provided</scope>
     </dependency>
 
@@ -58,7 +58,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
-      <version>2.13.0</version>
+      <version>2.13.3</version>
       <scope>provided</scope>
     </dependency>
 
